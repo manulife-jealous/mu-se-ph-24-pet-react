@@ -3,7 +3,14 @@ import Delete from './components/Delete';
 
 function Posts() {
     return (
-        window.location.href="posts.html"
+        <>
+        <div style={{padding: "10px"}}>
+            <Update />
+        </div>
+        <div style={{padding: "10px"}}>            
+            <Delete />
+        </div>
+        </>
     )
 }
 

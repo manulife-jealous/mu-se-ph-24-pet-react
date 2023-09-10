@@ -1,11 +1,11 @@
+import { Button } from '@manulife/mux';
+
 function Delete() {
     return (
         <>
-            <div>
-                'I am a delete function.'
-            </div>
+            <Button>Delete</Button>
         </>
-    )
+    )   
 }
 
 export default Delete; 

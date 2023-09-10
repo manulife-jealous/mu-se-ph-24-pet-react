@@ -1,10 +1,10 @@
+import { Button } from '@manulife/mux';
+
 function Update() {
     return (
         <>
-            <div>
-                'I am an update function.'
-            </div>
-        </>
+            <Button>Update</Button>
+        </> 
     )
 }
 
