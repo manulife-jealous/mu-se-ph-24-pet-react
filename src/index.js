@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import ForumForm from './components/forumform/ForumForm';
+import ForumFormEdit from './components/forumform/ForumFormEdit';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ root.render(
         <Routes>
           <Route exact path="/" element={<App />}/>
           <Route exact path="/addPost" element={<ForumForm/>}/>
+          <Route exach path="/editPost" element={<ForumFormEdit />}/>
         </Routes>
       </BrowserRouter>
   </ApolloProvider>

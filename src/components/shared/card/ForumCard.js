@@ -25,7 +25,7 @@ const GET_POST = gql`
 }
 `;
 
-const ForumCard = ({currentuser, post, onDelete}) =>{
+const ForumCard = ({currentuser, post, onDelete, onEdit}) =>{
   const { loading, error, data } = useQuery(GET_POST,
     {variables: {postId: 1}, });
   const { current_user_id } = currentuser
@@ -34,25 +34,16 @@ const ForumCard = ({currentuser, post, onDelete}) =>{
 
   const API_URL = 'http://localhost:3001';
 
-  const PostItem = ({post}) => {
-    const [deletePost, setDeletePost] = useState(post);
-  }
-
-  /*
-  useEffect(() => {
-    fetchPost();
-  },[])
-  */
-
-  /*
-  const fetchPost = async () => await fetch(`${API_URL}/posts/${post.id}`)
-    .then(response => response.json())
-    .then(data => setPost(data))
-  */
-    const [deletePost, setDeletePost] = useState();
-    const handleOnDelete = () => {      
+  const [deletePost, setDeletePost] = useState();
+  const [editPost, setEditPost] = useState();
+  const handleOnDelete = () => {      
       setDeletePost(post);
       onDelete(deletePost);      
+  }
+
+  const handleOnEdit = () => {      
+    setEditPost(post);
+    onEdit(editPost);
   }
   
   return (
@@ -76,7 +67,7 @@ const ForumCard = ({currentuser, post, onDelete}) =>{
           { current_user_id == user_id && 
           (
           <>
-            <Button   
+            <Button onClick={() => handleOnEdit()}   
               variant={Button.VARIANT.TERTIARY_BACK}
               icon={<CDS.Edit />}>
                 Edit
