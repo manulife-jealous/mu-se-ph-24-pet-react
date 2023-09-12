@@ -6,21 +6,21 @@ const Login = ({user}) => {
         {
           id: 1,
           name: "Ian Paul Eco",
-          email: "ian_paul_eco@manulife.ca",
+          email: "ian_paul_eco@oxley.va",
           phone: "123-4567",
           verify: "Awkward"
         },
         {
           id: 2,
           name: "Jealous Dizon",
-          email: "jealous_dizon@manulife.ca",
+          email: "jealous_dizon@verom.we",
           phone: "890-1234",
           verify: "Ambie Vert"
         },
         {
           id: 3,
           name: "Christian Librea",
-          email: "christian_librea@manulife.ca",
+          email: "christian_librea@stanford.ma",
           phone: "567-8901",
           verify: "Gene Rosity"
         },
