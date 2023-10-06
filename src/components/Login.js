@@ -4,25 +4,13 @@ import { Button } from '@manulife/mux';
 const Login = ({user}) => {
     const users = [
         {
-          id: 1,
-          name: "Ian Paul Eco",
-          email: "ian_paul_eco@manulife.ca",
-          phone: "123-4567",
-          password: "Awkward"
+          
         },
         {
-          id: 2,
-          name: "Jealous Dizon",
-          email: "jealous_dizon@manulife.ca",
-          phone: "890-1234",
-          password: "Ambie Vert"
+          
         },
         {
-          id: 3,
-          name: "Christian Librea",
-          email: "christian_librea@manulife.ca",
-          phone: "567-8901",
-          password: "Gene Rosity"
+          
         },
       ]
 
